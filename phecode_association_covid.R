@@ -36,7 +36,7 @@ myvars <- colnames(bm)[39:len1]
 
 fit <- lapply(myvars, function(dvar)
   tidy(glm(as.formula(paste0("result3", " ~ ", paste0(dvar," "),
-                             "Sex + Assessment_centres+ BMI+Age+ PCA1 + PCA2 + PCA3 + PCA4 + PCA5 + PCA6 + PCA7 + PCA8 + PCA9 + PCA10 + PCA11 + PCA12 + PCA13 + PCA14 + PCA15 + PCA16 + PCA17 + PCA18 + PCA19 + PCA20")),
+                             "Sex + Assessment_centres+Age+ PCA1 + PCA2 + PCA3 + PCA4 + PCA5 + PCA6 + PCA7 + PCA8 + PCA9 + PCA10 + PCA11 + PCA12 + PCA13 + PCA14 + PCA15 + PCA16 + PCA17 + PCA18 + PCA19 + PCA20")),
            family = binomial(link = "logit"),data=bm)))
 
 myresults = data.frame()
