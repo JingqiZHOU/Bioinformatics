@@ -163,9 +163,7 @@ p <- ggplot(data,aes(POS,-log10(p.value))) +
   # geom_hline(yintercept = c(-log10(0.05/850)), color = c('gray'), linetype = "dotted",size = 0.5) +
   geom_hline(data = difgrid,aes(yintercept = values), color = c('gray','red'),linetype = "dashed",size = 0.5)
 
-+
 
-  coord_flip()
 
 # Add thoese needing description
 # Load librry for text
